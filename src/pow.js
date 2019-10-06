@@ -1,0 +1,1 @@
+module.exports = function pow ( a, b ) { return a ** b }

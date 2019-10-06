@@ -1,0 +1,1 @@
+module.exports = function rem ( a, b ) { return a % b }
