@@ -1,42 +1,42 @@
 {
-    "{C6DA9091-2868-4953-9C96-109FEC0830DC}": {
+    "{8763145B-1B48-40D2-A3FB-995397A854FC}": {
         "source": "const add = require( './add' )\r\nconst div = require( './div' )\r\nconst mul = require( './mul' )\r\nconst pow = require( './pow' )\r\nconst rem = require( './rem' )\r\nconst sub = require( './sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
         "path": "calc/src/calc.js",
         "mapping": {
-            "./add": "{835DBF14-F8CC-445E-8F72-9621BE835221}",
-            "./div": "{5F57125C-1C9B-4C52-BA24-65B1A5D13F0A}",
-            "./mul": "{D1B1A889-2D6F-45A0-86F5-8F5040469E5E}",
-            "./pow": "{BAE6F664-1E3C-4E2E-83DE-C0DE94EACBBE}",
-            "./rem": "{7DB35274-D6BA-4345-B46F-FD8582B597E0}",
-            "./sub": "{FCC77BA7-87E5-4DED-959A-9BC6EEEF47A5}"
+            "./add": "{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}",
+            "./div": "{2B2C47D2-ED07-477F-9241-19280D216044}",
+            "./mul": "{DB998AD7-16E1-4982-8EED-352FF24FDB22}",
+            "./pow": "{6BB48990-7808-4B98-9E3A-300153A7C100}",
+            "./rem": "{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}",
+            "./sub": "{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}"
         }
     },
-    "{835DBF14-F8CC-445E-8F72-9621BE835221}": {
+    "{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}": {
         "source": "module.exports = function add ( a, b ) { return a + b }",
         "path": "calc/src/add.js",
         "mapping": {}
     },
-    "{5F57125C-1C9B-4C52-BA24-65B1A5D13F0A}": {
+    "{2B2C47D2-ED07-477F-9241-19280D216044}": {
         "source": "module.exports = function div ( a, b ) { return a / b }",
         "path": "calc/src/div.js",
         "mapping": {}
     },
-    "{D1B1A889-2D6F-45A0-86F5-8F5040469E5E}": {
+    "{DB998AD7-16E1-4982-8EED-352FF24FDB22}": {
         "source": "module.exports = function mul ( a, b ) { return a * b }",
         "path": "calc/src/mul.js",
         "mapping": {}
     },
-    "{BAE6F664-1E3C-4E2E-83DE-C0DE94EACBBE}": {
+    "{6BB48990-7808-4B98-9E3A-300153A7C100}": {
         "source": "module.exports = function pow ( a, b ) { return a ** b }",
         "path": "calc/src/pow.js",
         "mapping": {}
     },
-    "{7DB35274-D6BA-4345-B46F-FD8582B597E0}": {
+    "{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}": {
         "source": "module.exports = function rem ( a, b ) { return a % b }",
         "path": "calc/src/rem.js",
         "mapping": {}
     },
-    "{FCC77BA7-87E5-4DED-959A-9BC6EEEF47A5}": {
+    "{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}": {
         "source": "module.exports = function sub ( a, b ) { return a - b }",
         "path": "calc/src/sub.js",
         "mapping": {}
