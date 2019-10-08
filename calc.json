@@ -1,42 +1,42 @@
 {
-    "{0C54B391-B9E2-44BB-81B2-BDD070AE254A}": {
-        "source": "const add = require( 'add' )\r\nconst div = require( 'div' )\r\nconst mul = require( 'mul' )\r\nconst pow = require( 'pow' )\r\nconst rem = require( 'rem' )\r\nconst sub = require( 'sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
+    "{C6DA9091-2868-4953-9C96-109FEC0830DC}": {
+        "source": "const add = require( './add' )\r\nconst div = require( './div' )\r\nconst mul = require( './mul' )\r\nconst pow = require( './pow' )\r\nconst rem = require( './rem' )\r\nconst sub = require( './sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
         "path": "calc/src/calc.js",
         "mapping": {
-            "add": "{F34C121A-543C-4B01-8ED1-4EEF678AD926}",
-            "div": "{FDC8F6D3-6CA3-43A9-A8DB-8C545D53F665}",
-            "mul": "{F5CA4FC0-AB03-4864-BDC9-2C6F04CCFBA0}",
-            "pow": "{48EEB12E-807F-4FDB-BAE7-1EA7228052FB}",
-            "rem": "{6E533498-7FB1-41DA-8D0E-6420E7E121FC}",
-            "sub": "{781FFF26-09F2-43FD-855B-9FB926245D8E}"
+            "./add": "{835DBF14-F8CC-445E-8F72-9621BE835221}",
+            "./div": "{5F57125C-1C9B-4C52-BA24-65B1A5D13F0A}",
+            "./mul": "{D1B1A889-2D6F-45A0-86F5-8F5040469E5E}",
+            "./pow": "{BAE6F664-1E3C-4E2E-83DE-C0DE94EACBBE}",
+            "./rem": "{7DB35274-D6BA-4345-B46F-FD8582B597E0}",
+            "./sub": "{FCC77BA7-87E5-4DED-959A-9BC6EEEF47A5}"
         }
     },
-    "{F34C121A-543C-4B01-8ED1-4EEF678AD926}": {
+    "{835DBF14-F8CC-445E-8F72-9621BE835221}": {
         "source": "module.exports = function add ( a, b ) { return a + b }",
         "path": "calc/src/add.js",
         "mapping": {}
     },
-    "{FDC8F6D3-6CA3-43A9-A8DB-8C545D53F665}": {
+    "{5F57125C-1C9B-4C52-BA24-65B1A5D13F0A}": {
         "source": "module.exports = function div ( a, b ) { return a / b }",
         "path": "calc/src/div.js",
         "mapping": {}
     },
-    "{F5CA4FC0-AB03-4864-BDC9-2C6F04CCFBA0}": {
+    "{D1B1A889-2D6F-45A0-86F5-8F5040469E5E}": {
         "source": "module.exports = function mul ( a, b ) { return a * b }",
         "path": "calc/src/mul.js",
         "mapping": {}
     },
-    "{48EEB12E-807F-4FDB-BAE7-1EA7228052FB}": {
+    "{BAE6F664-1E3C-4E2E-83DE-C0DE94EACBBE}": {
         "source": "module.exports = function pow ( a, b ) { return a ** b }",
         "path": "calc/src/pow.js",
         "mapping": {}
     },
-    "{6E533498-7FB1-41DA-8D0E-6420E7E121FC}": {
+    "{7DB35274-D6BA-4345-B46F-FD8582B597E0}": {
         "source": "module.exports = function rem ( a, b ) { return a % b }",
         "path": "calc/src/rem.js",
         "mapping": {}
     },
-    "{781FFF26-09F2-43FD-855B-9FB926245D8E}": {
+    "{FCC77BA7-87E5-4DED-959A-9BC6EEEF47A5}": {
         "source": "module.exports = function sub ( a, b ) { return a - b }",
         "path": "calc/src/sub.js",
         "mapping": {}
