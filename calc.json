@@ -1,49 +1,42 @@
 {
-    "{7807078F-A0E0-42B2-9F99-C64E3B3D3756}": {
-        "source": "const argv = require( 'argv' )\r\nconst { relative, normalize } = require( 'pathname' )\r\nconst { writeTextFileSync } = require( 'filesystem' )\r\nconst { REG_LINE_SEP, LF } = require( 'text' )\r\n\r\nconst cd = normalize( require( 'WScript.Shell' ).CurrentDirectory )\r\nconst sep = '/'\r\nconst dir = cd.split( sep ).pop()\r\n\r\nconst host = 'wes'\r\nif ( dir === host ) throw new Error( `Cannot bundle if the current directory is \"${ host }\"` )\r\n\r\nconst { parse, stringify } = JSON\r\nconst bracket = '{'\r\nfunction bundle ( _modules ) {\r\n    const modules = parse( stringify( _modules ) )\r\n    const mods = {}\r\n    Object.keys( modules )\r\n        .filter( key => key.startsWith( bracket ) )\r\n        .map( key => {\r\n            const mod = modules[ key ]\r\n            mod.path = dir + sep + relative( cd, mod.path )\r\n            delete mod.module\r\n            delete mod.exports\r\n            return key\r\n        } )\r\n        .forEach( key => mods[ key ] = modules[ key ] )\r\n    return mods\r\n}\r\n\r\nrequire( argv[2] )\r\n\r\nconst mods = bundle( wes.Modules )\r\nconst json = '.json'\r\nconsole.log( writeTextFileSync( dir + json, stringify( mods, null, 4 ).replace( REG_LINE_SEP, LF ) ) )\r\n\r\nconsole.log( JSON.stringify( argv.unnamed, null, 4 ) )",
-        "path": "calc/node_modules/bundle.js",
-        "mapping": {
-            "/src/calc": "{BCB75322-F7C1-458C-981F-BF0AAAEACECC}"
-        }
-    },
-    "{BCB75322-F7C1-458C-981F-BF0AAAEACECC}": {
+    "{0C54B391-B9E2-44BB-81B2-BDD070AE254A}": {
         "source": "const add = require( 'add' )\r\nconst div = require( 'div' )\r\nconst mul = require( 'mul' )\r\nconst pow = require( 'pow' )\r\nconst rem = require( 'rem' )\r\nconst sub = require( 'sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
         "path": "calc/src/calc.js",
         "mapping": {
-            "add": "{B131CB5D-CAFD-4CBA-839D-CAB7DEA90A4F}",
-            "div": "{2D569CFC-0394-4D85-9058-F128A4F9AB5B}",
-            "mul": "{2589245C-201D-4D53-BCBA-3821B0603C2D}",
-            "pow": "{31095B9F-B9D8-48B1-8CBB-F169A0FE466C}",
-            "rem": "{33AF093E-7D37-42DF-B822-FD2ADAD31E55}",
-            "sub": "{945DFCC2-9BC7-4CCC-BC36-537F9664C9D5}"
+            "add": "{F34C121A-543C-4B01-8ED1-4EEF678AD926}",
+            "div": "{FDC8F6D3-6CA3-43A9-A8DB-8C545D53F665}",
+            "mul": "{F5CA4FC0-AB03-4864-BDC9-2C6F04CCFBA0}",
+            "pow": "{48EEB12E-807F-4FDB-BAE7-1EA7228052FB}",
+            "rem": "{6E533498-7FB1-41DA-8D0E-6420E7E121FC}",
+            "sub": "{781FFF26-09F2-43FD-855B-9FB926245D8E}"
         }
     },
-    "{B131CB5D-CAFD-4CBA-839D-CAB7DEA90A4F}": {
+    "{F34C121A-543C-4B01-8ED1-4EEF678AD926}": {
         "source": "module.exports = function add ( a, b ) { return a + b }",
         "path": "calc/src/add.js",
         "mapping": {}
     },
-    "{2D569CFC-0394-4D85-9058-F128A4F9AB5B}": {
+    "{FDC8F6D3-6CA3-43A9-A8DB-8C545D53F665}": {
         "source": "module.exports = function div ( a, b ) { return a / b }",
         "path": "calc/src/div.js",
         "mapping": {}
     },
-    "{2589245C-201D-4D53-BCBA-3821B0603C2D}": {
+    "{F5CA4FC0-AB03-4864-BDC9-2C6F04CCFBA0}": {
         "source": "module.exports = function mul ( a, b ) { return a * b }",
         "path": "calc/src/mul.js",
         "mapping": {}
     },
-    "{31095B9F-B9D8-48B1-8CBB-F169A0FE466C}": {
+    "{48EEB12E-807F-4FDB-BAE7-1EA7228052FB}": {
         "source": "module.exports = function pow ( a, b ) { return a ** b }",
         "path": "calc/src/pow.js",
         "mapping": {}
     },
-    "{33AF093E-7D37-42DF-B822-FD2ADAD31E55}": {
+    "{6E533498-7FB1-41DA-8D0E-6420E7E121FC}": {
         "source": "module.exports = function rem ( a, b ) { return a % b }",
         "path": "calc/src/rem.js",
         "mapping": {}
     },
-    "{945DFCC2-9BC7-4CCC-BC36-537F9664C9D5}": {
+    "{781FFF26-09F2-43FD-855B-9FB926245D8E}": {
         "source": "module.exports = function sub ( a, b ) { return a - b }",
         "path": "calc/src/sub.js",
         "mapping": {}
