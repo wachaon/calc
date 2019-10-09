@@ -167,17 +167,17 @@
       },
       "exports": {}
     },
-    "{16C738B3-9516-4F75-91F7-FFD15956557A}": {
+    "{F1396685-87DD-4782-860E-607F93689096}": {
       "source": "try{\r\n    var log = require( 'log' )\r\n    const calc = require( 'wachaon@calc' )\r\n    log( () => calc)\r\n    log( () => add( 6, 13 ) )\r\n} catch ( e ) {\r\n    log( () => require( 'filesystem' ).writeTextFileSync( 'log.json', JSON.stringify( wes, null, 2 ) ) )\r\n    //throw e\r\n    //\r\n}\r\n",
       "module": {
         "exports": {}
       },
       "path": "C:/bin/github/calc/index.js",
       "mapping": {
-        "wachaon@calc": "{3E32B3FD-A7A0-4D77-9FBB-D83B619FB339}"
+        "wachaon@calc": "{D8FEC1B7-80D4-455A-B425-505867BB383E}"
       }
     },
-    "{3E32B3FD-A7A0-4D77-9FBB-D83B619FB339}": {
+    "{D8FEC1B7-80D4-455A-B425-505867BB383E}": {
       "source": "// source: https://github.com/wachaon/calc\nconst mods = {\n    \"{8763145B-1B48-40D2-A3FB-995397A854FC}\": {\n        \"source\": \"const add = require( './add' )\\r\\nconst div = require( './div' )\\r\\nconst mul = require( './mul' )\\r\\nconst pow = require( './pow' )\\r\\nconst rem = require( './rem' )\\r\\nconst sub = require( './sub' )\\r\\n\\r\\nmodule.exports = {\\r\\n    add,\\r\\n    div,\\r\\n    mul,\\r\\n    pow,\\r\\n    rem,\\r\\n    sub\\r\\n}\\r\\n\",\n        \"path\": \"calc/src/calc.js\",\n        \"mapping\": {\n            \"./add\": \"{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}\",\n            \"./div\": \"{2B2C47D2-ED07-477F-9241-19280D216044}\",\n            \"./mul\": \"{DB998AD7-16E1-4982-8EED-352FF24FDB22}\",\n            \"./pow\": \"{6BB48990-7808-4B98-9E3A-300153A7C100}\",\n            \"./rem\": \"{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}\",\n            \"./sub\": \"{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}\"\n        }\n    },\n    \"{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}\": {\n        \"source\": \"module.exports = function add ( a, b ) { return a + b }\",\n        \"path\": \"calc/src/add.js\",\n        \"mapping\": {}\n    },\n    \"{2B2C47D2-ED07-477F-9241-19280D216044}\": {\n        \"source\": \"module.exports = function div ( a, b ) { return a / b }\",\n        \"path\": \"calc/src/div.js\",\n        \"mapping\": {}\n    },\n    \"{DB998AD7-16E1-4982-8EED-352FF24FDB22}\": {\n        \"source\": \"module.exports = function mul ( a, b ) { return a * b }\",\n        \"path\": \"calc/src/mul.js\",\n        \"mapping\": {}\n    },\n    \"{6BB48990-7808-4B98-9E3A-300153A7C100}\": {\n        \"source\": \"module.exports = function pow ( a, b ) { return a ** b }\",\n        \"path\": \"calc/src/pow.js\",\n        \"mapping\": {}\n    },\n    \"{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}\": {\n        \"source\": \"module.exports = function rem ( a, b ) { return a % b }\",\n        \"path\": \"calc/src/rem.js\",\n        \"mapping\": {}\n    },\n    \"{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}\": {\n        \"source\": \"module.exports = function sub ( a, b ) { return a - b }\",\n        \"path\": \"calc/src/sub.js\",\n        \"mapping\": {}\n    }\n}\nObject.keys( mods ).forEach( key => wes.Modules[ key ] = mods[ key ] )\nmodule.exports = require( '{8763145B-1B48-40D2-A3FB-995397A854FC}' )\n",
       "module": {
         "exports": {}
