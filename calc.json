@@ -1,44 +1,44 @@
 {
-    "{8763145B-1B48-40D2-A3FB-995397A854FC}": {
+    "{2B9F1527-68C0-4CF1-AC59-1FC248087723}": {
         "source": "const add = require( './add' )\r\nconst div = require( './div' )\r\nconst mul = require( './mul' )\r\nconst pow = require( './pow' )\r\nconst rem = require( './rem' )\r\nconst sub = require( './sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
-        "path": "calc/src/calc.js",
+        "path": "{calc}/src/calc.js",
         "mapping": {
-            "./add": "{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}",
-            "./div": "{2B2C47D2-ED07-477F-9241-19280D216044}",
-            "./mul": "{DB998AD7-16E1-4982-8EED-352FF24FDB22}",
-            "./pow": "{6BB48990-7808-4B98-9E3A-300153A7C100}",
-            "./rem": "{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}",
-            "./sub": "{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}"
+            "./add": "{34312C75-EC1D-4F87-9EA5-3C4015135488}",
+            "./div": "{75C2691F-CD49-4DD1-B3B1-984AD88F2127}",
+            "./mul": "{4B39456A-83D1-47A8-A6FB-FE27974E9D17}",
+            "./pow": "{B72696AA-C600-4577-AE3E-D2A853628EBD}",
+            "./rem": "{898FBE17-F626-4E3E-B319-4D965A13B739}",
+            "./sub": "{11142872-936E-47D3-80A9-E00F97AD9F95}"
         }
     },
-    "{48EB06EA-B0C6-4DE3-9F26-38FBC491CE03}": {
+    "{34312C75-EC1D-4F87-9EA5-3C4015135488}": {
         "source": "module.exports = function add ( a, b ) { return a + b }",
-        "path": "calc/src/add.js",
+        "path": "{calc}/src/add.js",
         "mapping": {}
     },
-    "{2B2C47D2-ED07-477F-9241-19280D216044}": {
+    "{75C2691F-CD49-4DD1-B3B1-984AD88F2127}": {
         "source": "module.exports = function div ( a, b ) { return a / b }",
-        "path": "calc/src/div.js",
+        "path": "{calc}/src/div.js",
         "mapping": {}
     },
-    "{DB998AD7-16E1-4982-8EED-352FF24FDB22}": {
+    "{4B39456A-83D1-47A8-A6FB-FE27974E9D17}": {
         "source": "module.exports = function mul ( a, b ) { return a * b }",
-        "path": "calc/src/mul.js",
+        "path": "{calc}/src/mul.js",
         "mapping": {}
     },
-    "{6BB48990-7808-4B98-9E3A-300153A7C100}": {
+    "{B72696AA-C600-4577-AE3E-D2A853628EBD}": {
         "source": "module.exports = function pow ( a, b ) { return a ** b }",
-        "path": "calc/src/pow.js",
+        "path": "{calc}/src/pow.js",
         "mapping": {}
     },
-    "{66A96364-C4B7-47AC-85F3-28B0AA3DBB9B}": {
+    "{898FBE17-F626-4E3E-B319-4D965A13B739}": {
         "source": "module.exports = function rem ( a, b ) { return a % b }",
-        "path": "calc/src/rem.js",
+        "path": "{calc}/src/rem.js",
         "mapping": {}
     },
-    "{26D90258-6ACD-4E36-944F-FB4E4DD3D2D4}": {
+    "{11142872-936E-47D3-80A9-E00F97AD9F95}": {
         "source": "module.exports = function sub ( a, b ) { return a - b }",
-        "path": "calc/src/sub.js",
+        "path": "{calc}/src/sub.js",
         "mapping": {}
     }
 }
