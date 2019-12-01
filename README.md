@@ -5,7 +5,6 @@
 ## 要件
 
 +   インストール 可能な モジュール は *GitHub* にあるもののみとする
-+   ダウンロード は bitsadmin を使用。1ファイル構成とする
 +   モジュールファイル は バンドル されたファイルを構成するオブジェクトと、それを評価する関数で構成
 
 
@@ -38,7 +37,7 @@ module.exports = { add, sub }
 モジュール生成コマンド
 
 ```
-wes buildModule src/calc
+wes bundle /src/calc
 ```
 
 生成されたファイル
@@ -71,17 +70,7 @@ wes buildModule src/calc
 インストールコマンド
 
 ```
-wes install wachaon@calc
-```
-
-出力されるコマンド
-
-```
-bitsadmin /TRANSFER GetWES https://raw.githubusercontent.com/wachaon/wes/master/calc.js %CD%\node_modules\wachaon@calc.json
-```
-
-```
-wes createModule %CD%\node_modules\wachaon@calc.json
+wes install @wachaon/calc
 ```
 
 ```javascript
@@ -117,6 +106,6 @@ module.exports = require( path.join( __dirname, __filename ), "{E320A885-D795-4B
 モジュールの呼び出し
 
 ```javascript
-const { add, sub } = require( 'wachaon@calc' )
+const { add, sub } = require( '@wachaon/calc' )
 console.log( sub( add( 5, 7 ), 4 ) ) // => 8
 ```

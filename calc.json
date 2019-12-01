@@ -1,42 +1,42 @@
 {
-    "{2B9F1527-68C0-4CF1-AC59-1FC248087723}": {
+    "{6B8726F4-8178-4558-9866-B2B22866D655}": {
         "source": "const add = require( './add' )\r\nconst div = require( './div' )\r\nconst mul = require( './mul' )\r\nconst pow = require( './pow' )\r\nconst rem = require( './rem' )\r\nconst sub = require( './sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
         "path": "{calc}/src/calc.js",
         "mapping": {
-            "./add": "{34312C75-EC1D-4F87-9EA5-3C4015135488}",
-            "./div": "{75C2691F-CD49-4DD1-B3B1-984AD88F2127}",
-            "./mul": "{4B39456A-83D1-47A8-A6FB-FE27974E9D17}",
-            "./pow": "{B72696AA-C600-4577-AE3E-D2A853628EBD}",
-            "./rem": "{898FBE17-F626-4E3E-B319-4D965A13B739}",
-            "./sub": "{11142872-936E-47D3-80A9-E00F97AD9F95}"
+            "./add": "{90CF99D9-1DA2-4869-BFA8-63536E8DB979}",
+            "./div": "{9C50DC3B-C687-472C-8F16-F3AD0BF38DB4}",
+            "./mul": "{59CAF00E-042C-4C23-B24E-E523BD04BE50}",
+            "./pow": "{78ADE251-1F46-4BCA-AB26-5C664B87A26E}",
+            "./rem": "{6BAC68B6-D385-4AF9-A565-BABE1B3ECFBB}",
+            "./sub": "{53DCFDF3-04C1-4BF0-AB02-7C8E613D10CB}"
         }
     },
-    "{34312C75-EC1D-4F87-9EA5-3C4015135488}": {
+    "{90CF99D9-1DA2-4869-BFA8-63536E8DB979}": {
         "source": "module.exports = function add ( a, b ) { return a + b }",
         "path": "{calc}/src/add.js",
         "mapping": {}
     },
-    "{75C2691F-CD49-4DD1-B3B1-984AD88F2127}": {
+    "{9C50DC3B-C687-472C-8F16-F3AD0BF38DB4}": {
         "source": "module.exports = function div ( a, b ) { return a / b }",
         "path": "{calc}/src/div.js",
         "mapping": {}
     },
-    "{4B39456A-83D1-47A8-A6FB-FE27974E9D17}": {
+    "{59CAF00E-042C-4C23-B24E-E523BD04BE50}": {
         "source": "module.exports = function mul ( a, b ) { return a * b }",
         "path": "{calc}/src/mul.js",
         "mapping": {}
     },
-    "{B72696AA-C600-4577-AE3E-D2A853628EBD}": {
+    "{78ADE251-1F46-4BCA-AB26-5C664B87A26E}": {
         "source": "module.exports = function pow ( a, b ) { return a ** b }",
         "path": "{calc}/src/pow.js",
         "mapping": {}
     },
-    "{898FBE17-F626-4E3E-B319-4D965A13B739}": {
+    "{6BAC68B6-D385-4AF9-A565-BABE1B3ECFBB}": {
         "source": "module.exports = function rem ( a, b ) { return a % b }",
         "path": "{calc}/src/rem.js",
         "mapping": {}
     },
-    "{11142872-936E-47D3-80A9-E00F97AD9F95}": {
+    "{53DCFDF3-04C1-4BF0-AB02-7C8E613D10CB}": {
         "source": "module.exports = function sub ( a, b ) { return a - b }",
         "path": "{calc}/src/sub.js",
         "mapping": {}
