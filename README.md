@@ -96,7 +96,7 @@ wes install @wachaon/calc
 ```
 
 ```javascript
-// C:/bin/node_modules/wachaon@calc/calc.js
+// C:/bin/node_modules/@wachaon/calc/index.js
 const path = require( 'pathname' )
 const modules = {
     "{1936D67A-5B4D-4FBB-8368-F37CFC1F947B}": {
