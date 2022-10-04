@@ -1,0 +1,22 @@
+{
+  "name": "calc",
+  "version": "0.0.1",
+  "description": "calc",
+  "main": "src/calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wachaon/calc.git"
+  },
+  "keywords": [
+    "calc"
+  ],
+  "author": "wachaon <wachaon@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wachaon/calc/issues"
+  },
+  "homepage": "https://github.com/wachaon/calc#readme"
+}

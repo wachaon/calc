@@ -1,0 +1,48 @@
+{
+    "{3FFFF7DD-A005-47FD-BB0A-F47A605FA33F}": {
+        "source": "const add = require( './add' )\r\nconst div = require( './div' )\r\nconst mul = require( './mul' )\r\nconst pow = require( './pow' )\r\nconst rem = require( './rem' )\r\nconst sub = require( './sub' )\r\n\r\nmodule.exports = {\r\n    add,\r\n    div,\r\n    mul,\r\n    pow,\r\n    rem,\r\n    sub\r\n}\r\n",
+        "mapping": {
+            "./add": "{1C0061E2-8CB6-4382-915A-52A93E718EE4}",
+            "./div": "{B2DA62C3-8CD7-43AF-9115-D14C8EF5A0EB}",
+            "./mul": "{2A9AB761-C851-4893-94AF-8E2D7D79102B}",
+            "./pow": "{9625DB1D-EE5E-409C-806C-D76D51834012}",
+            "./rem": "{7509CAEF-5E15-4BC5-9F78-4D078D6C9C02}",
+            "./sub": "{3FDF8345-C0BB-47E1-9862-8C4C04FE205B}"
+        },
+        "path": "{calc}/src/calc.js"
+    },
+    "{1C0061E2-8CB6-4382-915A-52A93E718EE4}": {
+        "source": "module.exports = function add ( a, b ) { return a + b }",
+        "mapping": {},
+        "path": "{calc}/src/add.js"
+    },
+    "{B2DA62C3-8CD7-43AF-9115-D14C8EF5A0EB}": {
+        "source": "module.exports = function div ( a, b ) { return a / b }",
+        "mapping": {},
+        "path": "{calc}/src/div.js"
+    },
+    "{2A9AB761-C851-4893-94AF-8E2D7D79102B}": {
+        "source": "module.exports = function mul ( a, b ) { return a * b }",
+        "mapping": {},
+        "path": "{calc}/src/mul.js"
+    },
+    "{9625DB1D-EE5E-409C-806C-D76D51834012}": {
+        "source": "module.exports = function pow ( a, b ) { return a ** b }",
+        "mapping": {},
+        "path": "{calc}/src/pow.js"
+    },
+    "{7509CAEF-5E15-4BC5-9F78-4D078D6C9C02}": {
+        "source": "module.exports = function rem ( a, b ) { return a % b }",
+        "mapping": {},
+        "path": "{calc}/src/rem.js"
+    },
+    "{3FDF8345-C0BB-47E1-9862-8C4C04FE205B}": {
+        "source": "module.exports = function sub ( a, b ) { return a - b }",
+        "mapping": {},
+        "path": "{calc}/src/sub.js"
+    },
+    "{EFCA5EE4-B40C-440C-A92D-BEAD83408F4C}": {
+        "source": "{\n  \"name\": \"calc\",\n  \"version\": \"0.0.1\",\n  \"description\": \"calc\",\n  \"main\": \"src/calc.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/wachaon/calc.git\"\n  },\n  \"keywords\": [\n    \"calc\"\n  ],\n  \"author\": \"wachaon <wachaon@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/wachaon/calc/issues\"\n  },\n  \"homepage\": \"https://github.com/wachaon/calc#readme\"\n}",
+        "path": "{calc}/package.json"
+    }
+}
