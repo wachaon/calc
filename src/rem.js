@@ -1,1 +1,1 @@
-module.exports = function rem ( a, b ) { return a % b }
+export default function rem(a, b) { return a % b }

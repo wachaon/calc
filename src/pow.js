@@ -1,1 +1,1 @@
-module.exports = function pow ( a, b ) { return a ** b }
+export default function pow(a, b) { return a ** b }

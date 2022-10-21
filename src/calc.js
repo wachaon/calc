@@ -1,15 +1,6 @@
-const add = require( './add' )
-const div = require( './div' )
-const mul = require( './mul' )
-const pow = require( './pow' )
-const rem = require( './rem' )
-const sub = require( './sub' )
-
-module.exports = {
-    add,
-    div,
-    mul,
-    pow,
-    rem,
-    sub
-}
+export { default as add } from './add'
+export { default as div } from './div'
+export { default as mul } from './mul'
+export { default as pow } from './pow'
+export { default as rem } from './rem'
+export { default as sub } from './sub'
