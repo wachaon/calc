@@ -1,6 +1,6 @@
 {
   "name": "calc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "calc",
   "main": "src/calc.js",
   "scripts": {
